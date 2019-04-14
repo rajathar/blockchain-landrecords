@@ -4,6 +4,6 @@ rm -R crypto-config/*
 
 rm config/*
 
-../bin/configtxgen -profile InsuranceOrgOrdererGenesis -outputBlock ./config/genesis.block
+../bin/configtxgen -profile ProperTOrgOrdererGenesis -outputBlock ./config/genesis.block
 
-../bin/configtxgen -profile InsuranceOrgChannel -outputCreateChannelTx ./config/channel.tx -channelID mychannel
+../bin/configtxgen -profile ProperTOrgChannel -outputCreateChannelTx ./config/channel.tx -channelID mychannel

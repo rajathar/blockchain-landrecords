@@ -51,61 +51,61 @@ sleep 5
 
 echo "peer1.financialCompany.properT.com joined the channel"
 
-echo "Installing insurance chaincode to peer0.kycCompany.properT.com..."
+echo "Installing properT chaincode to peer0.kycCompany.properT.com..."
 
 # install chaincode
 # Install code on kycCompany peer
-docker exec -e "CORE_PEER_LOCALMSPID=KYCCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/kycCompany.properT.com/users/Admin@kycCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer0.kycCompany.properT.com:7051" cli peer chaincode install -n insurance -v 1.0 -p github.com/insurance/go -l golang
+docker exec -e "CORE_PEER_LOCALMSPID=KYCCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/kycCompany.properT.com/users/Admin@kycCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer0.kycCompany.properT.com:7051" cli peer chaincode install -n properT -v 1.0 -p github.com/properT/go -l golang
 
-echo "Installed insurance chaincode to peer0.kycCompany.properT.com"
+echo "Installed properT chaincode to peer0.kycCompany.properT.com"
 
-echo "Installing insurance chaincode to peer1.kycCompany.properT.com..."
+echo "Installing properT chaincode to peer1.kycCompany.properT.com..."
 
 # install chaincode
 # Install code on kycCompany peer
-docker exec -e "CORE_PEER_LOCALMSPID=KYCCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/kycCompany.properT.com/users/Admin@kycCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer1.kycCompany.properT.com:7051" cli peer chaincode install -n insurance -v 1.0 -p github.com/insurance/go -l golang
+docker exec -e "CORE_PEER_LOCALMSPID=KYCCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/kycCompany.properT.com/users/Admin@kycCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer1.kycCompany.properT.com:7051" cli peer chaincode install -n properT -v 1.0 -p github.com/properT/go -l golang
 
-echo "Installed insurance chaincode to peer1.kycCompany.properT.com"
+echo "Installed properT chaincode to peer1.kycCompany.properT.com"
 
 
-echo "Installing insurance chaincode to peer0.resgistrarCompany.properT.com...."
-
-# Install code on resgistrarCompany peer
-docker exec -e "CORE_PEER_LOCALMSPID=ResgistrarCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/resgistrarCompany.properT.com/users/Admin@resgistrarCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer0.resgistrarCompany.properT.com:7051" cli peer chaincode install -n insurance -v 1.0 -p github.com/insurance/go -l golang
-
-echo "Installed insurance chaincode to peer0.resgistrarCompany.properT.com"
-
-echo "Installing insurance chaincode to peer1.resgistrarCompany.properT.com...."
+echo "Installing properT chaincode to peer0.resgistrarCompany.properT.com...."
 
 # Install code on resgistrarCompany peer
-docker exec -e "CORE_PEER_LOCALMSPID=ResgistrarCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/resgistrarCompany.properT.com/users/Admin@resgistrarCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer1.resgistrarCompany.properT.com:7051" cli peer chaincode install -n insurance -v 1.0 -p github.com/insurance/go -l golang
+docker exec -e "CORE_PEER_LOCALMSPID=ResgistrarCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/resgistrarCompany.properT.com/users/Admin@resgistrarCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer0.resgistrarCompany.properT.com:7051" cli peer chaincode install -n properT -v 1.0 -p github.com/properT/go -l golang
+
+echo "Installed properT chaincode to peer0.resgistrarCompany.properT.com"
+
+echo "Installing properT chaincode to peer1.resgistrarCompany.properT.com...."
+
+# Install code on resgistrarCompany peer
+docker exec -e "CORE_PEER_LOCALMSPID=ResgistrarCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/resgistrarCompany.properT.com/users/Admin@resgistrarCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer1.resgistrarCompany.properT.com:7051" cli peer chaincode install -n properT -v 1.0 -p github.com/properT/go -l golang
 
 sleep 5
 
-echo "Installed insurance chaincode to peer1.resgistrarCompany.properT.com"
+echo "Installed properT chaincode to peer1.resgistrarCompany.properT.com"
 
-echo "Installing insurance chaincode to peer0.financialCompany.properT.com..."
+echo "Installing properT chaincode to peer0.financialCompany.properT.com..."
 # Install code on financialCompany peer
-docker exec -e "CORE_PEER_LOCALMSPID=FinancialCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/financialCompany.properT.com/users/Admin@financialCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer0.financialCompany.properT.com:7051" cli peer chaincode install -n insurance -v 1.0 -p github.com/insurance/go -l golang
+docker exec -e "CORE_PEER_LOCALMSPID=FinancialCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/financialCompany.properT.com/users/Admin@financialCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer0.financialCompany.properT.com:7051" cli peer chaincode install -n properT -v 1.0 -p github.com/properT/go -l golang
 
 sleep 5
 
-echo "Installed insurance chaincode to peer0.financialCompany.properT.com"
+echo "Installed properT chaincode to peer0.financialCompany.properT.com"
 
-echo "Installing insurance chaincode to peer1.financialCompany.properT.com..."
+echo "Installing properT chaincode to peer1.financialCompany.properT.com..."
 # Install code on financialCompany peer
-docker exec -e "CORE_PEER_LOCALMSPID=FinancialCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/financialCompany.properT.com/users/Admin@financialCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer1.financialCompany.properT.com:7051" cli peer chaincode install -n insurance -v 1.0 -p github.com/insurance/go -l golang
+docker exec -e "CORE_PEER_LOCALMSPID=FinancialCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/financialCompany.properT.com/users/Admin@financialCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer1.financialCompany.properT.com:7051" cli peer chaincode install -n properT -v 1.0 -p github.com/properT/go -l golang
 
 sleep 5
 
-echo "Installed insurance chaincode to peer1.financialCompany.properT.com"
+echo "Installed properT chaincode to peer1.financialCompany.properT.com"
 
 
-echo "Instantiating insurance chaincode.."
+echo "Instantiating properT chaincode.."
 
-docker exec -e "CORE_PEER_LOCALMSPID=KYCCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/kycCompany.properT.com/users/Admin@kycCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer0.kycCompany.properT.com:7051" cli peer chaincode instantiate -o orderer.properT.com:7050 -C mychannel -n insurance -l golang -v 1.0 -c '{"Args":[""]}' -P "OR ('KYCCompanyMSP.member','ResgistrarCompanyMSP.member','FinancialCompanyMSP.member')"
+docker exec -e "CORE_PEER_LOCALMSPID=KYCCompanyMSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/kycCompany.properT.com/users/Admin@kycCompany.properT.com/msp" -e "CORE_PEER_ADDRESS=peer0.kycCompany.properT.com:7051" cli peer chaincode instantiate -o orderer.properT.com:7050 -C mychannel -n properT -l golang -v 1.0 -c '{"Args":[""]}' -P "OR ('KYCCompanyMSP.member','ResgistrarCompanyMSP.member','FinancialCompanyMSP.member')"
 
-echo "Instantiated insurance chaincode."
+echo "Instantiated properT chaincode."
 
 echo "Following is the docker network....."
 

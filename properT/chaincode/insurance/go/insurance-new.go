@@ -38,7 +38,7 @@ type SmartContract struct {
 }
 
 // Define the letter of credit
-type InsuranceClaim struct {
+type ProperTClaim struct {
 	ClaimId     string    `json:"claimId"`
 	Date        string `json:"date"`
 	InvoiceID   string   `json:"invoiceId"`
@@ -51,9 +51,9 @@ type InsuranceClaim struct {
 }
 
 func (s *SmartContract) Init(APIstub shim.ChaincodeStubInterface) sc.Response {
-	claims := []InsuranceClaim{
-		InsuranceClaim{ClaimId: "1", Date: "20190228", InvoiceID: "123", PatienceId: "1234", PatientName: "RR", HospitalId: "123", DoctorId: "1", Amount: 50000, Status: "Success"},
-		InsuranceClaim{ClaimId: "2", Date: "20190301", InvoiceID: "342", PatienceId: "3455", PatientName: "RA", HospitalId: "123", DoctorId: "2", Amount: 4000, Status: "Success"},
+	claims := []ProperTClaim{
+		ProperTClaim{ClaimId: "1", Date: "20190228", InvoiceID: "123", PatienceId: "1234", PatientName: "RR", HospitalId: "123", DoctorId: "1", Amount: 50000, Status: "Success"},
+		ProperTClaim{ClaimId: "2", Date: "20190301", InvoiceID: "342", PatienceId: "3455", PatientName: "RA", HospitalId: "123", DoctorId: "2", Amount: 4000, Status: "Success"},
 	}
 
 	i := 0
@@ -164,7 +164,7 @@ func (s *SmartContract) addNewClaim(APIstub shim.ChaincodeStubInterface, args []
 		return shim.Error("Claim already exists")
 	}
 
-	IC := InsuranceClaim{ClaimId: claimId, Date: date, InvoiceID: invoiceId, PatienceId: patientId, PatientName: patientName, HospitalId: hospitalId, DoctorId: doctorId, Amount: amount, Status: "Processing"}
+	IC := ProperTClaim{ClaimId: claimId, Date: date, InvoiceID: invoiceId, PatienceId: patientId, PatientName: patientName, HospitalId: hospitalId, DoctorId: doctorId, Amount: amount, Status: "Processing"}
 	ICBytes, err := json.Marshal(IC)
 
 	APIstub.PutState(invoiceId, ICBytes)
@@ -274,9 +274,9 @@ func (s *SmartContract) getLCHistory(APIstub shim.ChaincodeStubInterface, args [
 }*/
 
 func (s *SmartContract) initLedger(APIstub shim.ChaincodeStubInterface) sc.Response {
-/*	claims := []InsuranceClaim{
-		InsuranceClaim{ClaimId: 1, Date: "20190228", InvoiceID: 123, PatienceId: 1234, PatientName: "RR", HospitalId: 123, DoctorId: 1, Amount: 50000, Status: "Success"},
-		InsuranceClaim{ClaimId: 2, Date: "20190301", InvoiceID: 342, PatienceId: 3455, PatientName: "RA", HospitalId: 123, DoctorId: 2, Amount: 4000, Status: "Success"},
+/*	claims := []ProperTClaim{
+		ProperTClaim{ClaimId: 1, Date: "20190228", InvoiceID: 123, PatienceId: 1234, PatientName: "RR", HospitalId: 123, DoctorId: 1, Amount: 50000, Status: "Success"},
+		ProperTClaim{ClaimId: 2, Date: "20190301", InvoiceID: 342, PatienceId: 3455, PatientName: "RA", HospitalId: 123, DoctorId: 2, Amount: 4000, Status: "Success"},
 	}
 
 	i := 0

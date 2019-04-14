@@ -42,9 +42,9 @@ Organizations:
             # AnchorPeers defines the location of peers which can be used
             # for cross org gossip communication.  Note, this value is only
             # encoded in the genesis block in the Application section context
-            - Host: peer0.kycCompany.insuarance.com
+            - Host: peer0.kycCompany.properT.com
               Port: 7051
-            - Host: peer1.kycCompany.insuarance.com
+            - Host: peer1.kycCompany.properT.com
               Port: 7051
     - &ResgistrarCompany
         # DefaultOrg defines the organization which is used in the sampleconfig
@@ -62,7 +62,7 @@ Organizations:
             # encoded in the genesis block in the Application section context
             - Host: peer0.resgistrarCompany.properT.com
               Port: 7051
-            - Host: peer1.resgistrarCompany.insuarance.com
+            - Host: peer1.resgistrarCompany.properT.com
               Port: 7051
     - &FinancialCompany
         # DefaultOrg defines the organization which is used in the sampleconfig
@@ -80,7 +80,7 @@ Organizations:
             # encoded in the genesis block in the Application section context
             - Host: peer0.comapny3.properT.com
               Port: 7051
-            - Host: peer1.financialCompany.insuarance.com
+            - Host: peer1.financialCompany.properT.com
               Port: 7051
 ################################################################################
 #
@@ -151,7 +151,7 @@ Application: &ApplicationDefaults
 ################################################################################
 Profiles:
 
-    InsuranceOrgOrdererGenesis:
+    ProperTOrgOrdererGenesis:
         Orderer:
             <<: *OrdererDefaults
             Organizations:
@@ -163,7 +163,7 @@ Profiles:
                     - *ResgistrarCompany
                     - *FinancialCompany
 
-    InsuranceOrgChannel:
+    ProperTOrgChannel:
         Consortium: SampleConsortium
         Application:
             <<: *ApplicationDefaults
