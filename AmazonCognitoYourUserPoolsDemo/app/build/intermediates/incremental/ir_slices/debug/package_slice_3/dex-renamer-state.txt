@@ -1,0 +1,4 @@
+#Sun Apr 14 16:12:22 IST 2019
+base.0=C\:\\Users\\Shashi\\AndroidStudioProjects\\AmazonCognitoYourUserPoolsDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\3
+path.0=classes.dex
+renamed.0=classes.dex
