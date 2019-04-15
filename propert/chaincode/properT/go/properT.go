@@ -52,7 +52,7 @@ type Asset struct {
 	AssetNorthCoordinatesId int `json:"assetNorthCoordinatesId"`
 	AssetSouthCoordinatesId int `json:"assetSouthCoordinatesId"`
 	Address                 string  `json:"address"`
-	AssetType               int     `json:"assetType"`
+	//AssetType               int     `json:"assetType"`
 }
 
 type Person struct {
@@ -92,21 +92,21 @@ func (s *SmartContract) Init(APIstub shim.ChaincodeStubInterface) sc.Response {
 		i = i + 1
 	}*/
 
-	/*assets := []Asset{
-		Asset{AssetId: 1, AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-			AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 403", AssetType: 1},
-		Asset{AssetId: 2, AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-			AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 402", AssetType: 1},
+	assets := []Asset{
+		Asset{AssetId: "1", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
+			AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 403"},
+		Asset{AssetId: "2", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
+			AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 402"},
 	}
 
-	i := 1
-	for i <= len(assets) {
+	i := 0
+	for i < len(assets) {
 		fmt.Println("i is ", i)
 		ICsAsBytes, _ := json.Marshal(assets[i])
 		APIstub.PutState("AssetId:" + strconv.Itoa(i), ICsAsBytes)
 		fmt.Println("Added", assets[i])
 		i = i + 1
-	}*/
+	}
 
 	/*owners := []Owner{
 		Owner{OwnerId: 1, PersonId: 1, AssetId: 1, OwnershipDate: "20190101", Amount: 50000000},
@@ -182,9 +182,9 @@ func (s *SmartContract) initLedger(APIstub shim.ChaincodeStubInterface) sc.Respo
 
         assets := []Asset{
                 Asset{AssetId: "1", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-                        AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 403", AssetType: 1},
+                        AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 403"},
                 Asset{AssetId: "2", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-                        AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 402", AssetType: 1},
+                        AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 402"},
         }
 
         i := 1
