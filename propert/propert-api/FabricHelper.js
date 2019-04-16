@@ -621,11 +621,12 @@ function getLandRecordsForAssetId(req, res){
 }*/
 
 let propert = {
-	requestLC: requestLC,
+ 	getLandRecordsForAssetId: getLandRecordsForAssetId
+	/*,
 	issueLC: issueLC,
 	acceptLC: acceptLC,
 	getLC: getLC,
-	getLCHistory: getLCHistory
+	getLCHistory: getLCHistory*/
 }
 
 module.exports = propert;
