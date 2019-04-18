@@ -258,7 +258,17 @@
                     "description": "NEW OWNER NAME"
                 }
             }
+        },
+	"OWNERID": {
+            "type": "object",
+            "properties": {
+                "ownerId": {
+                    "type": "string",
+                    "description": "Asset ID"
+                }
+            }
         }
+	
     },
     "externalDocs": {
         "description": "Find out more about Swagger",

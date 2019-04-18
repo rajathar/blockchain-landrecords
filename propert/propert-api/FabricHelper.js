@@ -142,7 +142,7 @@ function getMyLandRecords(req, res){
 		// queryAllCars chaincode function - requires no arguments , ex: args: [''],
 		var request = {chaincodeId: 'properT',
 		fcn: 'getMyLandRecords',
-		args: [req.body.assetId],
+		args: [req.body.ownerId],
 		chainId: 'mychannel',
 		};
 	
@@ -156,8 +156,8 @@ function getMyLandRecords(req, res){
 				console.error("error from query = ", query_responses[0]);
 				res.send({code:"500", data: "Issue with getting LC details"});
 			} else {
-				
-				console.log("Response is ", query_responses[0].toString());
+			        console.log(query_response)	
+				console.log("Response is ", query_responses[0]);
 				res.send({code:"200", data: JSON.parse(query_responses[0].toString())});
 			}
 		} else {

@@ -165,7 +165,7 @@ func (s *SmartContract) getMyLandRecords(APIstub shim.ChaincodeStubInterface, ar
 
 	ownerId := args[0]
 
-	queryString := fmt.Sprintf("{\"selector\":{\"docType\":\"Asset\",\"ownerId\":\"%s\"}}", ownerId)
+	queryString := fmt.Sprintf("{\"selector\":{\"ownerId\":\"%s\"}}", ownerId)
 
 	queryResults, err := getQueryResultForQueryString(APIstub, queryString)
 	if err != nil {
