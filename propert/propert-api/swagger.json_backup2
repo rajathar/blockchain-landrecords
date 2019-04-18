@@ -97,7 +97,7 @@
                 
                 "summary": "Get Asset History",
                 "description": "Get Asset History",
-                "operationId": "transferAsset",
+                "operationId": "getAssetHistory",
                 "produces": [
                     "application/json"
                 ],
@@ -108,7 +108,9 @@
                         "description": "Asset details",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/ASSETTRANSFER"
+                            "$ref": "#/definitions/ASSETID",
+                            "$ref1": "#/definitions/OWNERID",
+                            "$ref2": "#/definitions/OWNERNAME"
                         }
                     }
                 ],
@@ -133,7 +135,7 @@
                 
                 "summary": "Get Asset History",
                 "description": "Get Asset History",
-                "operationId": "getMyLandRecords",
+                "operationId": "getAssetHistory",
                 "produces": [
                     "application/json"
                 ],
@@ -160,36 +162,6 @@
                     },
                     "400": {
                         "description": "Invalid status value"
-                    }
-                }
-            }
-        },
-        "/addLandRecords": {
-            "post": {
-                
-                "summary": "Add Land Records",
-                "description": "Add Land Records",
-                "operationId": "addLandRecords",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "parameters": [
-                    {
-                        "in": "body",
-                        "name": "body",
-                        "description": "Asset object",
-                        "required": true,
-                        "schema": {
-                            "$ref": "#/definitions/ASSET"
-                        }
-                    }
-                ],
-                "responses": {
-                    "405": {
-                        "description": "Invalid input"
                     }
                 }
             }
@@ -222,14 +194,6 @@
                 "address": {
                     "type": "string",
                     "description": "Asset Address"
-                },
-                "ownerId": {
-                    "type": "string",
-                    "description": "Owner Id"
-                },
-                "ownerName": {
-                    "type": "string",
-                    "description": "Owner Name"
                 }
             }
         },
@@ -242,18 +206,19 @@
                 }
             }
         },
-        "ASSETTRANSFER": {
+        "OWNERID": {
             "type": "object",
             "properties": {
                 "assetId": {
                     "type": "string",
-                    "description": "Asset id"
-                },
-                "ownerId": {
-                    "type": "string",
-                    "description": "owner id"
-                },
-                "ownerName": {
+                    "description": "NEW OWNER ID"
+                }
+            }
+        },
+        "OWNERNAME": {
+            "type": "object",
+            "properties": {
+                "assetId": {
                     "type": "string",
                     "description": "NEW OWNER NAME"
                 }

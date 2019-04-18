@@ -36,6 +36,14 @@ router.post('/getLandRecordsForAssetId', function (req, res) {
     
 });
 
+
+router.post('/addLandRecords', function (req, res) {
+
+    ProperT.addLandRecords(req, res);
+
+});
+
+
 /*
 // Get LC history
 router.post('/getLCHistory', function (req, res) {

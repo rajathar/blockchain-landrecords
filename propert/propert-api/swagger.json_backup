@@ -1,0 +1,104 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Swagger ProperT",
+        "version": "1.0.0",
+        "title": "Swagger ProperT",
+        
+        "contact": {
+            "email": ""
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "host": "ec2-13-58-19-178.us-east-2.compute.amazonaws.com:3000",
+    "basePath": "/propert",
+    
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/getLandRecordsForAssetId": {
+            "post": {
+                
+                "summary": "Get Asset Details",
+                "description": "Get Asset Details",
+                "operationId": "getLandRecordsForAssetId",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "LC object",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/ASSETID"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "object",
+                            "items": {
+                                "$ref": "#/definitions/ASSET"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "ASSET": {
+            "type": "object",
+            "properties": {
+                "assetId": {
+                    "type": "string",
+                    "description": "Asset ID"
+                },
+                "assetEastCoordinatesId": {
+                    "type": "string",
+                    "description": "Asset East Coordinates ID"
+                },
+                "assetWestCoordinatesId": {
+                    "type": "string",
+                    "description": "Asset West Coordinates ID"
+                },
+                "assetNorthCoordinatesId": {
+                    "type": "string",
+                    "description": "Asset North Coordinates ID"
+                },
+                "assetSouthCoordinatesId": {
+                    "type": "string",
+                    "description": "Asset South Coordinates ID"
+                },
+                "address": {
+                    "type": "string",
+                    "description": "Asset Address"
+                }
+            }
+        },
+        "ASSETID": {
+            "type": "object",
+            "properties": {
+                "assetId": {
+                    "type": "string",
+                    "description": "Asset ID"
+                }
+            }
+        }
+    },
+    "externalDocs": {
+        "description": "Find out more about Swagger",
+        "url": "http://swagger.io"
+    }
+}
