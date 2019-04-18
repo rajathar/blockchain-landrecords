@@ -9,25 +9,25 @@ var ProperT = require("./FabricHelper")
 
 
 // Request LC
-/*router.post('/', function (req, res) {
+router.post('/transferAsset', function (req, res) {
 
-ProperT.requestLC(req, res);
+ProperT.transferAsset(req, res);
 
 });
 
 // Issue LC
-router.post('/issueLC', function (req, res) {
+router.post('/getMyLandRecords', function (req, res) {
 
-    ProperT.issueLC(req, res);
+    ProperT.getMyLandRecords(req, res);
     
 });
 
 // Accept LC
-router.post('/acceptLC', function (req, res) {
+router.post('/getAssetHistory', function (req, res) {
 
-    ProperT.acceptLC(req, res);
+    ProperT.getAssetHistory(req, res);
     
-});*/
+});
 
 // Get LC
 router.post('/getLandRecordsForAssetId', function (req, res) {

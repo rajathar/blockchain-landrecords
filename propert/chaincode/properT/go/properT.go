@@ -28,6 +28,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"strconv"
+	"bytes"
+	"time"
 
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 	sc "github.com/hyperledger/fabric/protos/peer"
@@ -52,6 +54,8 @@ type Asset struct {
 	AssetNorthCoordinatesId int `json:"assetNorthCoordinatesId"`
 	AssetSouthCoordinatesId int `json:"assetSouthCoordinatesId"`
 	Address                 string  `json:"address"`
+	OwnerId					string   `json:"ownerId"`
+	OwnerName				string `json:"ownerName"`
 	//AssetType               int     `json:"assetType"`
 }
 
@@ -94,16 +98,16 @@ func (s *SmartContract) Init(APIstub shim.ChaincodeStubInterface) sc.Response {
 
 	assets := []Asset{
 		Asset{AssetId: "1", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-			AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 403"},
+		AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 403", OwnerId: "234-762", OwnerName:"Srinivas"},
 		Asset{AssetId: "2", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-			AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 402"},
+		AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 402", OwnerId:"347-983", OwnerName:"Fathima"},
 	}
 
 	i := 0
 	for i < len(assets) {
 		fmt.Println("i is ", i)
 		ICsAsBytes, _ := json.Marshal(assets[i])
-		APIstub.PutState("AssetId:" + strconv.Itoa(i), ICsAsBytes)
+		APIstub.PutState(assets[i].AssetId, ICsAsBytes)
 		fmt.Println("Added", assets[i])
 		i = i + 1
 	}
@@ -134,6 +138,10 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) sc.Response 
 		return s.getLandRecordsForAssetId(APIstub, args)
 	} else if function == "transferAsset" {
 		return s.transferAsset(APIstub, args)
+	} else if function == "getAssetHistory" {
+		return s.getAssetHistory(APIstub, args)
+	} else if function == "getMyLandRecords" {
+		return s.getMyLandRecords(APIstub, args)
 	}
 
 	return shim.Error("Invalid Smart Contract function name.")
@@ -149,16 +157,29 @@ func (s *SmartContract) getLandRecordsForAssetId(APIstub shim.ChaincodeStubInter
 	return shim.Success(ICAsBytes)
 }
 
-// This function is transferAsset Claim
-func (s *SmartContract) transferAsset(APIstub shim.ChaincodeStubInterface, args []string) sc.Response {
-	return shim.Success(nil)
+func (s *SmartContract) getMyLandRecords(APIstub shim.ChaincodeStubInterface, args []string) sc.Response {
+	
+	if len(args) < 1 {
+		return shim.Error("Incorrect number of arguments. Expecting 1")
+	}
+
+	ownerId := args[0]
+
+	queryString := fmt.Sprintf("{\"selector\":{\"docType\":\"Asset\",\"ownerId\":\"%s\"}}", ownerId)
+
+	queryResults, err := getQueryResultForQueryString(APIstub, queryString)
+	if err != nil {
+		return shim.Error(err.Error())
+	}
+	return shim.Success(queryResults)
 }
+
 
 // =========================================================================================
 // getQueryResultForQueryString executes the passed in query string.
 // Result set is built and returned as a byte array containing the JSON results.
 // =========================================================================================
-/*func getQueryResultForQueryString(stub shim.ChaincodeStubInterface, queryString string) ([]byte, error) {
+func getQueryResultForQueryString(stub shim.ChaincodeStubInterface, queryString string) ([]byte, error) {
 
 	fmt.Printf("- getQueryResultForQueryString queryString:\n%s\n", queryString)
 
@@ -176,28 +197,75 @@ func (s *SmartContract) transferAsset(APIstub shim.ChaincodeStubInterface, args 
 	fmt.Printf("- getQueryResultForQueryString queryResult:\n%s\n", buffer.String())
 
 	return buffer.Bytes(), nil
-}*/
-
-func (s *SmartContract) initLedger(APIstub shim.ChaincodeStubInterface) sc.Response {
-
-        assets := []Asset{
-                Asset{AssetId: "1", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-                        AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 403"},
-                Asset{AssetId: "2", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-                        AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 402"},
-        }
-
-        i := 1
-        for i <= len(assets) {
-                fmt.Println("i is ", i)
-                ICsAsBytes, _ := json.Marshal(assets[i])
-                APIstub.PutState("AssetId:" + strconv.Itoa(i), ICsAsBytes)
-                fmt.Println("Added", assets[i])
-                i = i + 1
-        }
-
-	return shim.Success(nil)
 }
+
+// ===========================================================================================
+// constructQueryResponseFromIterator constructs a JSON array containing query results from
+// a given result iterator
+// ===========================================================================================
+func constructQueryResponseFromIterator(resultsIterator shim.StateQueryIteratorInterface) (*bytes.Buffer, error) {
+	// buffer is a JSON array containing QueryResults
+	var buffer bytes.Buffer
+	buffer.WriteString("[")
+
+	bArrayMemberAlreadyWritten := false
+	for resultsIterator.HasNext() {
+		queryResponse, err := resultsIterator.Next()
+		if err != nil {
+			return nil, err
+		}
+		// Add a comma before array members, suppress it for the first array member
+		if bArrayMemberAlreadyWritten == true {
+			buffer.WriteString(",")
+		}
+		buffer.WriteString("{\"Key\":")
+		buffer.WriteString("\"")
+		buffer.WriteString(queryResponse.Key)
+		buffer.WriteString("\"")
+
+		buffer.WriteString(", \"Record\":")
+		// Record is a JSON object, so we write as-is
+		buffer.WriteString(string(queryResponse.Value))
+		buffer.WriteString("}")
+		bArrayMemberAlreadyWritten = true
+	}
+	buffer.WriteString("]")
+
+	return &buffer, nil
+}
+
+// This function is transferAsset Claim
+func (s *SmartContract) transferAsset(APIstub shim.ChaincodeStubInterface, args []string) sc.Response {
+	//return shim.Success(nil)
+	assetId := args[0]
+	//ownerId := args[1]
+	personId := args[1]
+	personName:= args[2]
+
+	ICAsBytes, _ := APIstub.GetState(assetId)
+	var lr Asset
+
+	err := json.Unmarshal(ICAsBytes, &lr)
+
+	if err != nil {
+		return shim.Error("Issue with LC json unmarshaling")
+	}
+
+
+	LR := Asset{AssetId: lr.AssetId, AssetEastCoordinatesId: lr.AssetEastCoordinatesId, AssetWestCoordinatesId:lr.AssetWestCoordinatesId, AssetNorthCoordinatesId: lr.AssetNorthCoordinatesId, AssetSouthCoordinatesId:lr.AssetSouthCoordinatesId, Address: lr.Address, OwnerId:personId,OwnerName:personName}
+	LRBytes, err := json.Marshal(LR)
+
+	if err != nil {
+		return shim.Error("Issue with LR json marshaling")
+	}
+
+        APIstub.PutState(lr.AssetId,LRBytes)
+	fmt.Println("Land Registration Completed -> ", LR)
+
+	return shim.Success(LRBytes)
+
+}
+
 
 // The main function is only relevant in unit test mode. Only included here for completeness.
 func main() {
@@ -209,3 +277,61 @@ func main() {
 	}
 }
 
+func (s *SmartContract) getAssetHistory(APIstub shim.ChaincodeStubInterface, args []string) sc.Response {
+
+	assetId := args[0];
+
+	resultsIterator, err := APIstub.GetHistoryForKey(assetId)
+	if err != nil {
+		return shim.Error("Error retrieving Asset history.")
+	}
+	defer resultsIterator.Close()
+
+	// buffer is a JSON array containing historic values for the marble
+	var buffer bytes.Buffer
+	buffer.WriteString("[")
+
+	bArrayMemberAlreadyWritten := false
+	for resultsIterator.HasNext() {
+		response, err := resultsIterator.Next()
+		if err != nil {
+			return shim.Error("Error retrieving Asset history.")
+		}
+		// Add a comma before array members, suppress it for the first array member
+		if bArrayMemberAlreadyWritten == true {
+			buffer.WriteString(",")
+		}
+		buffer.WriteString("{\"TxId\":")
+		buffer.WriteString("\"")
+		buffer.WriteString(response.TxId)
+		buffer.WriteString("\"")
+
+		buffer.WriteString(", \"Value\":")
+		// if it was a delete operation on given key, then we need to set the
+		//corresponding value null. Else, we will write the response.Value
+		//as-is (as the Value itself a JSON marble)
+		if response.IsDelete {
+			buffer.WriteString("null")
+		} else {
+			buffer.WriteString(string(response.Value))
+		}
+
+		buffer.WriteString(", \"Timestamp\":")
+		buffer.WriteString("\"")
+		buffer.WriteString(time.Unix(response.Timestamp.Seconds, int64(response.Timestamp.Nanos)).String())
+		buffer.WriteString("\"")
+
+		buffer.WriteString(", \"IsDelete\":")
+		buffer.WriteString("\"")
+		buffer.WriteString(strconv.FormatBool(response.IsDelete))
+		buffer.WriteString("\"")
+
+		buffer.WriteString("}")
+		bArrayMemberAlreadyWritten = true
+	}
+	buffer.WriteString("]")
+
+	fmt.Printf("- getAssetHistory returning:\n%s\n", buffer.String())
+
+	return shim.Success(buffer.Bytes())
+}

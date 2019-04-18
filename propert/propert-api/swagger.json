@@ -55,6 +55,116 @@
                     }
                 }
             }
+        },
+        "/getAssetHistory": {
+            "post": {
+                
+                "summary": "Get Asset History",
+                "description": "Get Asset History",
+                "operationId": "getAssetHistory",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Asset object",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/ASSETID"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ASSET"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/transferAsset": {
+            "post": {
+                
+                "summary": "Get Asset History",
+                "description": "Get Asset History",
+                "operationId": "getAssetHistory",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Asset details",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/ASSETID",
+                            "$ref1": "#/definitions/OWNERID",
+                            "$ref2": "#/definitions/OWNERNAME"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "object",
+                            "items": {
+                                "$ref": "#/definitions/ASSET"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
+        },
+        "/getMyLandRecords": {
+            "post": {
+                
+                "summary": "Get Asset History",
+                "description": "Get Asset History",
+                "operationId": "getAssetHistory",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Asset object",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/OWNERID"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ASSET"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid status value"
+                    }
+                }
+            }
         }
     },
     "definitions": {
@@ -95,6 +205,24 @@
                     "description": "Asset ID"
                 }
             }
+        },
+        "OWNERID": {
+            "type": "object",
+            "properties": {
+                "assetId": {
+                    "type": "string",
+                    "description": "NEW OWNER ID"
+                }
+            }
+        },
+        "OWNERNAME": {
+            "type": "object",
+            "properties": {
+                "assetId": {
+                    "type": "string",
+                    "description": "NEW OWNER NAME"
+                }
+            }
         }
     },
     "externalDocs": {
@@ -102,3 +230,4 @@
         "url": "http://swagger.io"
     }
 }
+
