@@ -182,6 +182,16 @@ public class UserActivity extends AppCompatActivity {
 
         // Find which item was selected
         switch(item.getItemId()) {
+
+            case R.id.nav_user_search_asset:
+                // Add a new attribute
+                search();
+                break;
+            case R.id.nav_user_transfer_asset:
+                // Add a new attribute
+                TransferAsset();
+                break;
+
             case R.id.nav_user_add_attribute:
                 // Add a new attribute
                 addAttribute();
@@ -237,6 +247,9 @@ public class UserActivity extends AppCompatActivity {
                 showUserDetail(attributeType, attributeValue);
             }
         });
+
+
+
     }
 
     // Update attributes
@@ -252,10 +265,23 @@ public class UserActivity extends AppCompatActivity {
         AppHelper.getPool().getUser(AppHelper.getCurrUser()).updateAttributesInBackground(updatedUserAttributes, updateHandler);
     }
 
+
     // Show user MFA Settings
     private void showSettings() {
         Intent userSettingsActivity = new Intent(this,SettingsActivity.class);
         startActivityForResult(userSettingsActivity, 20);
+    }
+
+    // Add a new asset
+    private void search() {
+        Intent searchIntent = new Intent(this,LandDetails.class);
+        startActivityForResult(searchIntent,22);
+    }
+
+    // Transfer asset
+    private void TransferAsset() {
+        Intent transferLand = new Intent(this,TransferActivity.class);
+        startActivityForResult(transferLand, 22);
     }
 
     // Add a new attribute
@@ -263,6 +289,7 @@ public class UserActivity extends AppCompatActivity {
         Intent addAttrbutesActivity = new Intent(this,AddAttributeActivity.class);
         startActivityForResult(addAttrbutesActivity, 22);
     }
+
 
     // Delete attribute
     private void deleteAttribute(String attributeName) {

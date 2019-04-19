@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amazonaws.youruserpools.LandDetails"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/editTextAssetID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:hint="enter survey Id"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_fetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAssetID"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="30dp"
+        android:text="Fetch"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAssetID" />
+
+    <include
+        layout="@layout/content_land_asset"></include>
+
+
+
+
+
+
+
+
+</LinearLayout>

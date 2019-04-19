@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1555242195752"
+    timestamp="1555673005961"
     token="7128340833978571829"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -26,6 +26,9 @@
     <artifact
         location="C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
         type="SPLIT" />
+    <artifact
+        location="C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
     <artifact
         location="C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
@@ -59,17 +62,17 @@
     <artifact
         location="C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
-    <artifact
-        location="C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1555242195752"
+        timestamp="1555673005961"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
@@ -103,9 +106,6 @@
         <artifact
             location="C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

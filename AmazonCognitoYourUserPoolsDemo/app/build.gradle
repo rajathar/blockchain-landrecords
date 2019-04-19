@@ -28,4 +28,8 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:23.4.0'
     implementation 'com.android.support.constraint:constraint-layout:1.+'
     implementation 'com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.13.+'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.5'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.8.5'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.8.5'
 }

@@ -692,6 +692,7 @@ drawable text_border_error
 drawable text_border_selected
 drawable text_border_selector
 id ForgotPassword_button
+id LinearLay
 id ScrollView01
 id aadharnum
 id aboutBack
@@ -727,6 +728,7 @@ id buttonRegisterTotp
 id buttonSendVerifyCode
 id buttonVerifyEmail
 id buttonVerifyPhone
+id button_fetch
 id cancel_action
 id card_view
 id center
@@ -758,6 +760,7 @@ id devices_toolbar_title
 id dimensions
 id direct
 id disableHome
+id editTextAssetID
 id editTextAttrData
 id editTextChangePassCurrPass
 id editTextChangePassNewPass
@@ -765,6 +768,7 @@ id editTextConfirmCode
 id editTextConfirmUserId
 id editTextForgotPasswordCode
 id editTextForgotPasswordPass
+id editTextLandId
 id editTextMFACode
 id editTextNewPassPass
 id editTextRegEmail
@@ -790,6 +794,7 @@ id fill_horizontal
 id fill_vertical
 id fixed
 id forgot_password_toolbar_title
+id getLandRecords
 id gone
 id group_main_about
 id group_main_end
@@ -800,8 +805,10 @@ id group_user_about
 id group_user_add_attribute
 id group_user_change_password
 id group_user_end
+id group_user_search
 id group_user_settings
 id group_user_signout
+id group_user_transfer_asset
 id group_user_trusted_devices
 id group_user_verify_attribute
 id groups
@@ -844,8 +851,10 @@ id nav_sign_up_confirm
 id nav_user_about
 id nav_user_add_attribute
 id nav_user_change_password
+id nav_user_search_asset
 id nav_user_settings
 id nav_user_sign_out
+id nav_user_transfer_asset
 id nav_user_trusted_devices
 id nav_user_verify_attribute
 id nav_userend
@@ -902,6 +911,7 @@ id space0
 id space1
 id space10
 id space11
+id space12
 id space13
 id space2
 id space3
@@ -961,6 +971,15 @@ id text
 id text2
 id textSpacerNoButtons
 id textView
+id textView1
+id textView2
+id textView3
+id textView4
+id textView5
+id textView6
+id textView7
+id textView8
+id textView9
 id textViewAbout
 id textViewAddAttrTitle
 id textViewAppMainTitle
@@ -1044,6 +1063,7 @@ id toolbar_settings
 id toolbar_verify
 id top
 id topPanel
+id transfer
 id up
 id useLogo
 id user_drawer_layout
@@ -1091,12 +1111,15 @@ layout activity_change_password
 layout activity_choose_mfa
 layout activity_device_settings
 layout activity_forgot_password
+layout activity_land_details
+layout activity_land_records
 layout activity_main
 layout activity_mfa
 layout activity_new_password
 layout activity_register_user
 layout activity_settings
 layout activity_sign_up_confirm
+layout activity_transfer
 layout activity_user
 layout activity_verify
 layout content_about_app

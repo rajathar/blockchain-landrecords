@@ -2,6 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group
+        android:id="@+id/group_user_search"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_user_search_asset"
+            android:title="Search " />
+    </group>
+
+    <group
+        android:id="@+id/group_user_transfer_asset"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_user_transfer_asset"
+            android:title="Transfer Asset" />
+    </group>
+
+    <group
         android:id="@+id/group_user_add_attribute"
         android:checkableBehavior="single">
         <item
