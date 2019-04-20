@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Shashi\\AndroidStudioProjects\\AmazonCognitoYourUserPoolsDemo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "C:\\Users\\rajat\\AndroidStudioProjects\\AmazonCognitoYourUserPoolsDemo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Shashi\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\df44084e852fe92e6d411a32078a548d\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\rajat\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\0cedd4ee0d56bc690bb2321b06bba8cc\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

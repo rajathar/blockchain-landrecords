@@ -40,6 +40,7 @@ public class LandRecordsActivity extends AppCompatActivity {
 
     private void updateUI() {
 
+           mOWnerID = LandRecordsActivity.this.getIntent().getExtras().getString("OWNERID").toString();
            List<Land> lands= HttpUtils.ViewMyLandRecords(mOWnerID);
 
            if(lands!=null) {
@@ -47,17 +48,17 @@ public class LandRecordsActivity extends AppCompatActivity {
                mLandRecyclerView.setAdapter(mAdapter);
            }
            else
-               Log.d("Lands","lands not gotten from HttpUtils");
+               Log.d("Lands","lands not gotten from Utils");
     }
 
 
     private class LandHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private TextView assetId,address,ownerId,ownerName;
-        private Land mLand;
+        private Land mLand ;
         public LandHolder(LayoutInflater inflater, ViewGroup parent) {
             super(inflater.inflate(R.layout.content_land_asset, parent,false));
             assetId=(TextView)itemView.findViewById(R.id.textView1);
-            address=(TextView)findViewById(R.id.textView2);
+            address=(TextView) itemView.findViewById(R.id.textView2);
             ownerId=(TextView)itemView.findViewById(R.id.textView7);
             ownerName=(TextView)itemView.findViewById(R.id.textView8);
         }
@@ -94,8 +95,10 @@ public class LandRecordsActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(LandHolder holder, int position) {
-            Land land=mLands.get(position);
-           holder.bind(land);
+            Land land = mLands.get(position);
+            if (land != null){
+                holder.bind(land);
+            }
 
         }
 
@@ -106,11 +109,11 @@ public class LandRecordsActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==22)
-        { Intent intent=data;
-            String ownerid= intent.getStringExtra("OWNER").toString();
+        {
+            String ownerid= data.getStringExtra("OWNERID").toString();
             mOWnerID=ownerid;
 
         }

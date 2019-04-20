@@ -67,6 +67,7 @@ public class UserActivity extends AppCompatActivity {
 
     private Button getLandRecordsButton;
 
+    private String phoneNumber;
 
     // Cognito user objects
     private CognitoUser user;
@@ -277,6 +278,11 @@ public class UserActivity extends AppCompatActivity {
         }
         CognitoUserAttributes updatedUserAttributes = new CognitoUserAttributes();
         updatedUserAttributes.addAttribute(attributeType, attributeValue);
+
+        if(attributeType.equals("phone_number")){
+            phoneNumber = updatedUserAttributes.getAttributes().get("phone_number");
+        }
+
         Toast.makeText(getApplicationContext(), attributeType + ": " + attributeValue, Toast.LENGTH_LONG);
         showWaitDialog("Updating...");
         AppHelper.getPool().getUser(AppHelper.getCurrUser()).updateAttributesInBackground(updatedUserAttributes, updateHandler);
@@ -303,10 +309,9 @@ public class UserActivity extends AppCompatActivity {
 
     // view my assets
     private void ViewMyAssets() {
-
-
+        CognitoUserAttributes updatedUserAttributes = new CognitoUserAttributes();
         Intent viewmyassets = new Intent(this,LandRecordsActivity.class);
-        viewmyassets.putExtra("OWNERID","");
+        viewmyassets.putExtra("OWNERID",phoneNumber);
         //put here code to get the jsonobject array.
         startActivityForResult(viewmyassets, 22);
     }
@@ -364,6 +369,9 @@ public class UserActivity extends AppCompatActivity {
             closeWaitDialog();
             // Store details in the AppHandler
             AppHelper.setUserDetails(cognitoUserDetails);
+            phoneNumber = cognitoUserDetails.getAttributes().getAttributes().get("phone_number");
+            phoneNumber = phoneNumber.replace("+91", "");
+            System.out.println("Phone number:" + phoneNumber);
             showAttributes();
             // Trusted devices?
             handleTrustedDevice();

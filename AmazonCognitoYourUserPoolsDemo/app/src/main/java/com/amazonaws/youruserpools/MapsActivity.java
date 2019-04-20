@@ -1,7 +1,9 @@
 package com.amazonaws.youruserpools;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.amazonaws.youruserpools.CognitoYourUserPoolsDemo.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -19,7 +21,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -39,19 +40,23 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        double lat=0;
-        double lon=0;
+        Double lat = 0.0;
+        Double lon = 0.0;
+        // Bundle bundle = getIntent().getExtras();
+        Intent intent = getIntent();
 
-        Bundle bundle = getIntent().getExtras();
-
-        if (bundle != null) {
-            lat = bundle.getDouble("latitude");
-            lon = bundle.getDouble("longitude");
+        if (intent != null) {
+            lat = intent.getDoubleExtra("Latitude",1);
+            lon = intent.getDoubleExtra("Longitude",0.0);
         }
-
+        Log.i("LAT",String.valueOf(lat));
+        Log.i("LON",String.valueOf(lon));
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(lat, lon);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        LatLng sydney = new LatLng(lat,lon);
+        mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Your Location"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom( new LatLng( lat,lon), 15));
     }
 }

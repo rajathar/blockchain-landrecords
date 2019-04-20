@@ -136,15 +136,15 @@
 
     <TextView
         android:id="@+id/resultTextView"
-        android:layout_width="match_parent"
-        android:layout_height="41dp"
+        android:layout_width="381dp"
+        android:layout_height="158dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
-        android:visibility="visible"
         android:text=""
         android:textAlignment="center"
         android:textSize="20sp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"

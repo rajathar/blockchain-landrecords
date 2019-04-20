@@ -120,14 +120,13 @@ public class TransferActivity extends AppCompatActivity {
                 resultTextView.setText("Land with Id "+AssetID.getText()+" successfully transfered to "+Recipientname.getText()+" having ID:"+RecipientID.getText());
 
 
-                statusCode=HttpUtils.TransferOwnership(assetIDString,RecipientIDString,RecipientNameString);
+                statusCode = HttpUtils.TransferOwnership(assetIDString,RecipientIDString,RecipientNameString);
                 if(statusCode!=200) {
                     resultTextView.setText("fail");
 
                 } else {
-
-                    resultTextView.setText("Land with Id "+AssetID.getText()+" successfully transfered to "+Recipientname.getText()+" having ID:"+RecipientID.getText());
-
+                    resultTextView.setText("Land with Id "+AssetID.getText()+
+                            " successfully transfered to "+Recipientname.getText()+" having ID:"+RecipientID.getText());
                 }
             }
         });

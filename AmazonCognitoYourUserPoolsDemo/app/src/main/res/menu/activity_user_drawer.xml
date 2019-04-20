@@ -6,7 +6,7 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_user_search_asset"
-            android:title="Search " />
+            android:title="Search ProperT" />
     </group>
 
     <group
@@ -30,7 +30,7 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_user_add_attribute"
-            android:title="Add attribute" />
+            android:title="Add Details" />
     </group>
 
     <group
@@ -38,7 +38,7 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_user_verify_attribute"
-            android:title="Verify attribute" />
+            android:title="Verify Details" />
     </group>
 
     <group

@@ -5,6 +5,11 @@ public class Land {
     private String assetId;
     private String address;
     private String breadth;
+    private String length;
+    private String latitude;
+    private String longitude;
+    private String ownerId;
+    private String ownerName;
 
     public String getBreadth() {
         return breadth;
@@ -38,11 +43,6 @@ public class Land {
         this.longitude = longitude;
     }
 
-    private String length;
-    private String latitude;
-    private String longitude;
-    private String ownerId;
-    private String ownerName;
 
     public String getAssetId() {
         return assetId;
@@ -59,9 +59,6 @@ public class Land {
     public void setAddress(String address) {
         this.address = address;
     }
-
-
-
 
     public String getOwnerId() {
         return ownerId;

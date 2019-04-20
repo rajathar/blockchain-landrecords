@@ -64,7 +64,7 @@ public class NewPassword extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         TextView main_title = (TextView) findViewById(R.id.newpassword_toolbar_title);
-        main_title.setText("Welcome");
+        main_title.setText("Welcome to ProperT");
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

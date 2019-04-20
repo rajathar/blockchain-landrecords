@@ -774,6 +774,7 @@ drawable ic_account_circle_white1
 drawable ic_cancel_black
 drawable ic_menu_black
 drawable icon
+drawable image2
 drawable not_checked
 drawable notification_action_background
 drawable notification_bg
@@ -935,6 +936,7 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imageView
 id imageViewAppMainCognitoIcon
 id include
 id include_current_user_details
@@ -1316,6 +1318,7 @@ mipmap ic_launcher
 mipmap ic_visibility_black
 mipmap ic_visibility_off_black
 mipmap icon
+mipmap image2
 string Menu
 string Password
 string Username

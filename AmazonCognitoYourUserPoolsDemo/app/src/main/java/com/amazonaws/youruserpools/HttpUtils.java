@@ -5,7 +5,10 @@ import android.util.Log;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.reflect.TypeToken;
-import com.loopj.android.http.*;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.JsonHttpResponseHandler;
+import com.loopj.android.http.RequestParams;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -152,8 +155,8 @@ public class HttpUtils {
                     JSONObject serverResp = new JSONObject(response.toString());
                     System.out.println("Response here");
                     System.out.println(serverResp);
-                    resp=serverResp;
-                    SC=statusCode;
+                    resp = serverResp;
+                    SC = statusCode;
                 } catch (JSONException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
@@ -164,21 +167,22 @@ public class HttpUtils {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 // Pull out the first event on the public timeline
-                resp=response;
-                SC=statusCode;
-                System.out.println(response);
-
+                resp = response;
+                try {
+                    SC = Integer.parseInt(response.get("code").toString());
+                } catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
-        return 0;
 
-
+        return SC;
     }
 
     public static List<Land> ViewMyLandRecords(String OwnerID) {
 
         RequestParams rp = new RequestParams();
-        rp.add("ownerId","7893516033");
+        rp.add("ownerId",OwnerID);
 
         HttpUtils.post("/getMyLandRecords", rp, new JsonHttpResponseHandler() {
             @Override

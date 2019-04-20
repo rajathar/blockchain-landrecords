@@ -45,10 +45,6 @@ public class LandRecordsActivity extends AppCompatActivity {
             super(inflater.inflate(R.layout.content_land_asset,parent,false));
             assetId=(TextView)findViewById(R.id.textView1);
             address=(TextView)findViewById(R.id.textView2);
-            assetNorthCoordinatesId=(TextView)findViewById(R.id.textView3);
-            assetEastCoordinatesId=(TextView)findViewById(R.id.textView4);
-            assetWestCoordinatesId=(TextView)findViewById(R.id.textView5);
-            assetSouthCoordinatesId=(TextView)findViewById(R.id.textView6);
             ownerId=(TextView)findViewById(R.id.textView7);
             ownerName=(TextView)findViewById(R.id.textView8);
         }

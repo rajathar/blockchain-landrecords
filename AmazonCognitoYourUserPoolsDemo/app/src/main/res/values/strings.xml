@@ -11,9 +11,9 @@
     <string name="Menu">Menu</string>
     <string name="pick_MFA">MFA Options</string>
     <string name="title_activity_about_app">AboutApp</string>
-    <string name="about">Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.\n\nLicensed under the Amazon Software License (the "License").\nYou may not use this file except in compliance with the License.\nA copy of the License is located at\n\nhttp://aws.amazon.com/asl/
-\n\nor in the "license" file accompanying this app. This app is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
-    <string name="more_info">This is a sample app to showcase Cognito Identity and the SDK for Android.</string>
+    <string name="about">ProperT is a Peer 2 Peer Tokenized Smart property management system. It allows you to do manage the complete lifecycle of your property in all aspects. It aims to bring all the participants of the property business like registrar, govt bodies and financial institutions to make the property transactions, Trustworthy and Transparent
+    </string>
+    <string name="more_info">This is the ProperT App for Android.\n\nThe team behind ProperT.</string>
     <string name="title_activity_sign_up_confirm">SignUpConfirm</string>
     <string name="title_activity_mfa">MFAActivity</string>
     <string name="title_activity_choose_mfa">ChooseMFA</string>

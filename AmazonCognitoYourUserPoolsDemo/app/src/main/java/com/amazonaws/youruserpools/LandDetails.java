@@ -23,7 +23,7 @@ public class LandDetails extends AppCompatActivity {
     Button fetchButton,MapButton;
     EditText fetchassetId;
     LinearLayout linearLayout;
-    String length,breadth,latitude,longitude;
+    Double length,breadth,latitude,longitude;
     JSONObject resp=null;
     Land mLand;
     String ASID;
@@ -64,46 +64,46 @@ fetchassetId.addTextChangedListener(new TextWatcher() {
 });
 
         MapButton=(Button) findViewById(R.id.MAPbutton);
+        MapButton.setVisibility(View.INVISIBLE);
         MapButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle args = new Bundle();
-                args.putDouble("latitude",-34);
-                args.putDouble("longitude",123);
-
-                Intent intent = new Intent();
-                intent.putExtra("bundle",args);
-                startActivity(new Intent(LandDetails.this, MapsActivity.class));
-                            }
+                Intent intent = new Intent(LandDetails.this, MapsActivity.class);
+                intent.putExtra("Latitude",latitude);
+                intent.putExtra("Longitude",longitude);
+                // intent.setComponent(SupportMapFragment.this,MapsActivity.class);
+                startActivity(intent);
+                // Snackbar.make(view, "see the Map for your Area", Snackbar.LENGTH_LONG)
+                //       .setAction("Action", null).show();
+            }
         });
-        Bundle bundle = new Bundle();
-        bundle.putString("text", "From Activity");
+
 
         fetchButton= (Button) findViewById(R.id.button_fetch);
         fetchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-
                 mLand=HttpUtils.invokeService(ASID);
              if(mLand!=null) {
 
-                     linearLayout.setVisibility(View.VISIBLE);
+                 MapButton.setVisibility(View.VISIBLE);
+
+                 linearLayout.setVisibility(View.VISIBLE);
                      assetId.setText(mLand.getAssetId());
                      address.setText(mLand.getAddress());
-                     length=mLand.getLength();
-                     breadth=mLand.getBreadth();
-                     latitude=mLand.getLatitude();
-                     longitude=mLand.getLongitude();
+                     length=Double.valueOf(mLand.getLength());
+                     breadth=Double.valueOf(mLand.getBreadth());
+                     latitude=Double.valueOf(mLand.getLatitude());
+                     longitude=Double.valueOf(mLand.getLongitude());
                      ownerId.setText(mLand.getOwnerId());
                      ownerName.setText(mLand.getOwnerName());
 
              } else {
 
                  linearLayout.setVisibility(View.INVISIBLE);
-                 Toast.makeText(LandDetails.this,"Land with the given ID is not registered.",Toast.LENGTH_LONG).show();
+                 Toast.makeText(LandDetails.this, "Land with the given ID is not registered.", Toast.LENGTH_LONG).show();
              }
-
 
 
             }
