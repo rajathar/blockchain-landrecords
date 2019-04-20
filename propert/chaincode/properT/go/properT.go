@@ -142,6 +142,8 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) sc.Response 
 		return s.getAssetHistory(APIstub, args)
 	} else if function == "getMyLandRecords" {
 		return s.getMyLandRecords(APIstub, args)
+	} else if function == "addLandRecords" {
+		return s.addLandRecords(APIstub, args)
 	}
 
 	return shim.Error("Invalid Smart Contract function name.")
@@ -266,6 +268,34 @@ func (s *SmartContract) transferAsset(APIstub shim.ChaincodeStubInterface, args 
 
 }
 
+func (s *SmartContract) addLandRecords(APIstub shim.ChaincodeStubInterface, args []string) sc.Response {
+ 	assetId := args[0];
+	assetEastCoordinates,err := strconv.Atoi(args[1]);
+	assetWestCoordinates,err := strconv.Atoi(args[2]);
+	assetNorthCoordinates,err := strconv.Atoi(args[3]);
+	assetSouthCoordinates,err := strconv.Atoi(args[4]);
+	ownerId := args[5];
+	ownerName := args[6];
+	address := args[7];
+
+	if err != nil {
+		return shim.Error("Not able to parse Coordinates")
+	}
+
+	ICAsBytes, _ := APIstub.GetState(assetId)
+
+	if ICAsBytes != nil {
+		return shim.Error("Asset already exists")
+	}
+
+	AssetObj := Asset{AssetId: assetId, AssetEastCoordinatesId: assetEastCoordinates, AssetWestCoordinatesId:assetWestCoordinates, AssetNorthCoordinatesId: assetNorthCoordinates, AssetSouthCoordinatesId:assetSouthCoordinates, Address: address, OwnerId:ownerId,OwnerName:ownerName}
+	ICBytes, err := json.Marshal(AssetObj)
+
+	APIstub.PutState(assetId, ICBytes)
+	fmt.Println("Asset Requested -> ", AssetObj)
+
+	return shim.Success(nil)
+}
 
 // The main function is only relevant in unit test mode. Only included here for completeness.
 func main() {
