@@ -47,10 +47,10 @@ const (
 
 type Asset struct {
 	AssetId                 string     `json:"assetId"`
-	AssetEastCoordinatesId  int `json:"assetEastCoordinatesId"`
-	AssetWestCoordinatesId  int `json:"assetWestCoordinatesId"`
-	AssetNorthCoordinatesId int `json:"assetNorthCoordinatesId"`
-	AssetSouthCoordinatesId int `json:"assetSouthCoordinatesId"`
+	Latitude  int `json:"latitude"`
+	Longitude  int `json:"longitude"`
+	Length int `json:"lengthId"`
+	Breadth int `json:"breadthId"`
 	Address                 string  `json:"address"`
 	//AssetType               int     `json:"assetType"`
 }
@@ -93,12 +93,12 @@ func (s *SmartContract) Init(APIstub shim.ChaincodeStubInterface) sc.Response {
 	}*/
 
 	assets := []Asset{
-		Asset{AssetId: "1", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-			AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 403"},
-		Asset{AssetId: "2", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-			AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 402"},
-		Asset{AssetId: "3", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-                        AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 404"},	
+		Asset{AssetId: "1", Latitude: 10, Longitude: 20, Length: 29,
+			Breadth: 10, Address: "Fortune Samrat 403"},
+		Asset{AssetId: "2", Latitude: 10, Longitude: 20, Length: 29,
+			Breadth: 10, Address: "Fortune Samrat 402"},
+		Asset{AssetId: "3", Latitude: 10, Longitude: 20, Length: 29,
+                        Breadth: 10, Address: "Fortune Samrat 404"},	
 	}
 
 	i := 0
@@ -183,10 +183,10 @@ func (s *SmartContract) transferAsset(APIstub shim.ChaincodeStubInterface, args 
 func (s *SmartContract) initLedger(APIstub shim.ChaincodeStubInterface) sc.Response {
 
         assets := []Asset{
-                Asset{AssetId: "1", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-                        AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 403"},
-                Asset{AssetId: "2", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-                        AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 402"},
+                Asset{AssetId: "1", Latitude: 10, Longitude: 20, Length: 29,
+                        Breadth: 10, Address: "Fortune Samrat 403"},
+                Asset{AssetId: "2", Latitude: 10, Longitude: 20, Length: 29,
+                        Breadth: 10, Address: "Fortune Samrat 402"},
         }
 
         i := 1

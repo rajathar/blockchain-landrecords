@@ -444,11 +444,11 @@ Fabric_Client.newDefaultKeyValueStore({ path: store_path
 	// must send the proposal to endorsing peers
 	var request = {chaincodeId: 'properT',
                 fcn: 'addLandRecords',
-                args: [req.body.assetId, req.body.assetEastCoordinatesId, req.body.assetWestCoordinatesId , req.body.assetNorthCoordinatesId, req.body.assetSouthCoordinatesId, req.body.ownerId, req.body.ownerName, req.body.address],
+                args: [req.body.assetId, req.body.latitude, req.body.longitude , req.body.length, req.body.breadth, req.body.ownerId, req.body.ownerName, req.body.address],
                 chainId: 'mychannel',
                 txId: tx_id};
 
-	console.log(req.body.assetId, req.body.assetEastCoordinatesId, req.body.assetWestCoordinatesId , req.body.assetNorthCoordinatesId, req.body.assetSouthCoordinatesId, req.body.ownerId, req.body.ownerName, req.body.address);
+	console.log(req.body.assetId, req.body.latitude, req.body.longitude , req.body.length, req.body.breadth, req.body.ownerId, req.body.ownerName, req.body.address);
 	// send the transaction proposal to the peers
 	return channel.sendTransactionProposal(request);
 }).then((results) => {

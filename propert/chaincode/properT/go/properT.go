@@ -49,10 +49,10 @@ const (
 
 type Asset struct {
 	AssetId                 string     `json:"assetId"`
-	AssetEastCoordinatesId  int `json:"assetEastCoordinatesId"`
-	AssetWestCoordinatesId  int `json:"assetWestCoordinatesId"`
-	AssetNorthCoordinatesId int `json:"assetNorthCoordinatesId"`
-	AssetSouthCoordinatesId int `json:"assetSouthCoordinatesId"`
+	Latitude float64 `json:"latitude"`
+	Longitude  float64 `json:"longitude"`
+	Length float64 `json:"length"`
+	Breadth float64 `json:"breadth"`
 	Address                 string  `json:"address"`
 	OwnerId					string   `json:"ownerId"`
 	OwnerName				string `json:"ownerName"`
@@ -97,10 +97,10 @@ func (s *SmartContract) Init(APIstub shim.ChaincodeStubInterface) sc.Response {
 	}*/
 
 	assets := []Asset{
-		Asset{AssetId: "1", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-		AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 403", OwnerId: "234-762", OwnerName:"Srinivas"},
-		Asset{AssetId: "2", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-		AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 402", OwnerId:"347-983", OwnerName:"Fathima"},
+		Asset{AssetId: "1", Latitude: 10, Longitude: 20, Length: 29,
+		Breadth: 10, Address: "Fortune Samrat 403", OwnerId: "234-762", OwnerName:"Srinivas"},
+		Asset{AssetId: "2", Latitude: 10, Longitude: 20, Length: 29,
+		Breadth: 10, Address: "Fortune Samrat 402", OwnerId:"347-983", OwnerName:"Fathima"},
 	}
 
 	i := 0
@@ -224,7 +224,7 @@ func (s *SmartContract) transferAsset(APIstub shim.ChaincodeStubInterface, args 
 	}
 
 
-	LR := Asset{AssetId: lr.AssetId, AssetEastCoordinatesId: lr.AssetEastCoordinatesId, AssetWestCoordinatesId:lr.AssetWestCoordinatesId, AssetNorthCoordinatesId: lr.AssetNorthCoordinatesId, AssetSouthCoordinatesId:lr.AssetSouthCoordinatesId, Address: lr.Address, OwnerId:personId,OwnerName:personName}
+	LR := Asset{AssetId: lr.AssetId, Latitude: lr.Latitude, Longitude:lr.Longitude, Length: lr.Length, Breadth:lr.Breadth, Address: lr.Address, OwnerId:personId,OwnerName:personName}
 	LRBytes, err := json.Marshal(LR)
 
 	if err != nil {
@@ -240,10 +240,10 @@ func (s *SmartContract) transferAsset(APIstub shim.ChaincodeStubInterface, args 
 
 func (s *SmartContract) addLandRecords(APIstub shim.ChaincodeStubInterface, args []string) sc.Response {
  	assetId := args[0];
-	assetEastCoordinates,err := strconv.Atoi(args[1]);
-	assetWestCoordinates,err := strconv.Atoi(args[2]);
-	assetNorthCoordinates,err := strconv.Atoi(args[3]);
-	assetSouthCoordinates,err := strconv.Atoi(args[4]);
+	latitude,err := strconv.ParseFloat(args[1],64);
+	longitude,err := strconv.ParseFloat(args[2],64);
+	length,err := strconv.ParseFloat(args[3],64);
+	breadth,err := strconv.ParseFloat(args[4],64);
 	ownerId := args[5];
 	ownerName := args[6];
 	address := args[7];
@@ -258,7 +258,7 @@ func (s *SmartContract) addLandRecords(APIstub shim.ChaincodeStubInterface, args
 		return shim.Error("Asset already exists")
 	}
 
-	AssetObj := Asset{AssetId: assetId, AssetEastCoordinatesId: assetEastCoordinates, AssetWestCoordinatesId:assetWestCoordinates, AssetNorthCoordinatesId: assetNorthCoordinates, AssetSouthCoordinatesId:assetSouthCoordinates, Address: address, OwnerId:ownerId,OwnerName:ownerName}
+	AssetObj := Asset{AssetId: assetId, Latitude: latitude, Longitude:longitude, Length: length, Breadth:breadth, Address: address, OwnerId:ownerId,OwnerName:ownerName}
 	ICBytes, err := json.Marshal(AssetObj)
 
 	APIstub.PutState(assetId, ICBytes)
