@@ -33,6 +33,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -63,6 +64,9 @@ public class UserActivity extends AppCompatActivity {
     private AlertDialog userDialog;
     private ProgressDialog waitDialog;
     private ListView attributesList;
+
+    private Button getLandRecordsButton;
+
 
     // Cognito user objects
     private CognitoUser user;
@@ -100,6 +104,14 @@ public class UserActivity extends AppCompatActivity {
         View navigationHeader = nDrawer.getHeaderView(0);
         TextView navHeaderSubTitle = (TextView) navigationHeader.findViewById(R.id.textViewNavUserSub);
         navHeaderSubTitle.setText(username);
+
+        getLandRecordsButton=(Button)findViewById(R.id.getLandRecords);
+        getLandRecordsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ViewMyAssets();
+            }
+        });
     }
 
     @Override
@@ -184,13 +196,18 @@ public class UserActivity extends AppCompatActivity {
         switch(item.getItemId()) {
 
             case R.id.nav_user_search_asset:
-                // Add a new attribute
+                // Add a new asset
                 search();
                 break;
             case R.id.nav_user_transfer_asset:
-                // Add a new attribute
+                // transfer asset
                 TransferAsset();
                 break;
+            case R.id.nav_user_myLandRecords_asset:
+                // view all my assets
+                ViewMyAssets();
+                break;
+
 
             case R.id.nav_user_add_attribute:
                 // Add a new attribute
@@ -282,6 +299,16 @@ public class UserActivity extends AppCompatActivity {
     private void TransferAsset() {
         Intent transferLand = new Intent(this,TransferActivity.class);
         startActivityForResult(transferLand, 22);
+    }
+
+    // view my assets
+    private void ViewMyAssets() {
+
+
+        Intent viewmyassets = new Intent(this,LandRecordsActivity.class);
+        viewmyassets.putExtra("OWNERID","");
+        //put here code to get the jsonobject array.
+        startActivityForResult(viewmyassets, 22);
     }
 
     // Add a new attribute

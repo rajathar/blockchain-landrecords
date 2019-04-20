@@ -30,6 +30,11 @@
 
     <include
         layout="@layout/content_land_asset"></include>
+    <Button
+        android:id="@+id/MAPbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See on Map" />
 
 
 

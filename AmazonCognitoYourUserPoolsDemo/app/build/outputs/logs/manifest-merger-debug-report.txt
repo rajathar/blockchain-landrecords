@@ -1,44 +1,62 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-79:12
-INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-79:12
-INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-79:12
-INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-79:12
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-98:12
+INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-98:12
+INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-98:12
+INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-98:12
 MERGED from [com.android.support:design:23.1.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\design-23.1.1.aar\8396251b24b4f5eebf6ffcfad39c7510\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.2.1.aar\c556c6f7c942a59ef8164fce75b34dba\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.4.0.aar\54fd146da3f80d3168c7a97b71454ede\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-23.4.0.aar\e6eebdfdad161c4dde459791a3e23463\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\295007bd7e5186139b9d9dd13a8f47d7\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\fa6903a85d03314decee741a8c01a536\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\38bf2f64b1ef0fd16775719840e81229\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\bedfcd34df93cc77a64082a3371f13b4\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.2.1.aar\d30242a8d06e22d8641df3b0d9b60d8f\AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.2.1.aar\86a076cddae77fde92b3a588ac0d7516\AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\b68ef7538309cfb31401f17af79a404c\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-79:12
-INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-79:12
-INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-79:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e3684e80281c1338cbb90edabb80f34c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\df44084e852fe92e6d411a32078a548d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\49992e22a786558240023f39b3324726\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\d1996fe2668c83e9b01f6ee406ea5f57\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\fc009d08cd2ad3c95a25aa5439da6150\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\8689176712c4690224c7e33d8dfcceba\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f6b0b6bdf8d4789d75cc03c67415c8dc\AndroidManifest.xml:17:1-30:12
+INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-98:12
+INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-98:12
+INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-98:12
 	package
 		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:3:5-67
 		INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-79:12
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-98:12
 		INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-79:12
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:1-98:12
 		INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:10:22-76
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:11:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:12:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:12:22-76
 application
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:8:5-77:19
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:14:5-96:19
 MERGED from [com.android.support:design:23.1.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\design-23.1.1.aar\8396251b24b4f5eebf6ffcfad39c7510\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.1.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\design-23.1.1.aar\8396251b24b4f5eebf6ffcfad39c7510\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.2.1.aar\c556c6f7c942a59ef8164fce75b34dba\AndroidManifest.xml:25:5-20
@@ -47,152 +65,178 @@ MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\Shashi\.gradle\cac
 MERGED from [com.android.support:cardview-v7:23.4.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\cardview-v7-23.4.0.aar\54fd146da3f80d3168c7a97b71454ede\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\295007bd7e5186139b9d9dd13a8f47d7\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\295007bd7e5186139b9d9dd13a8f47d7\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\fa6903a85d03314decee741a8c01a536\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\fa6903a85d03314decee741a8c01a536\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\38bf2f64b1ef0fd16775719840e81229\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\38bf2f64b1ef0fd16775719840e81229\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\bedfcd34df93cc77a64082a3371f13b4\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\bedfcd34df93cc77a64082a3371f13b4\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.2.1.aar\d30242a8d06e22d8641df3b0d9b60d8f\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.2.1.aar\d30242a8d06e22d8641df3b0d9b60d8f\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.2.1.aar\86a076cddae77fde92b3a588ac0d7516\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.2.1.aar\86a076cddae77fde92b3a588ac0d7516\AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\b68ef7538309cfb31401f17af79a404c\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\b68ef7538309cfb31401f17af79a404c\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e3684e80281c1338cbb90edabb80f34c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e3684e80281c1338cbb90edabb80f34c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\df44084e852fe92e6d411a32078a548d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\df44084e852fe92e6d411a32078a548d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\49992e22a786558240023f39b3324726\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\49992e22a786558240023f39b3324726\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\d1996fe2668c83e9b01f6ee406ea5f57\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\d1996fe2668c83e9b01f6ee406ea5f57\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\fc009d08cd2ad3c95a25aa5439da6150\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\fc009d08cd2ad3c95a25aa5439da6150\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\8689176712c4690224c7e33d8dfcceba\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\8689176712c4690224c7e33d8dfcceba\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f6b0b6bdf8d4789d75cc03c67415c8dc\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f6b0b6bdf8d4789d75cc03c67415c8dc\AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:11:9-41
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:17:9-41
 	android:icon
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:10:9-38
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:16:9-38
 	android:allowBackup
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:13:9-40
-activity#com.amazonaws.youruserpools.CognitoYourUserPoolsDemo.LandRecordsActivity
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:14:9-66
-	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:14:19-54
-activity#com.amazonaws.youruserpools.TransferActivity
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:15:9-90
-	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:15:19-78
-activity#com.amazonaws.youruserpools.LandDetails
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:16:9-85
-	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:16:19-73
-activity#com.amazonaws.youruserpools.MainActivity
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:17:9-25:20
-	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:19:13-56
-	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:18:13-68
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:20:13-24:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:21:17-69
-	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:21:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:23:17-77
-	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:23:27-74
-activity#com.amazonaws.youruserpools.UserActivity
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:26:9-29:59
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:19:9-40
+activity#com.amazonaws.youruserpools.MapsActivity
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:30:9-32:68
 	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:28:13-56
-	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:29:13-56
-	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:27:13-68
-activity#com.amazonaws.youruserpools.RegisterUser
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:30:9-32:59
-	android:theme
 		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:32:13-56
 	android:name
 		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:31:13-68
-activity#com.amazonaws.youruserpools.AboutApp
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:33:9-36:59
-	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:35:13-61
-	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:36:13-56
+activity#com.amazonaws.youruserpools.LandRecordsActivity
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:33:9-84
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:34:13-64
-activity#com.amazonaws.youruserpools.SignUpConfirm
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:37:9-40:59
-	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:39:13-67
-	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:40:13-56
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:33:19-81
+activity#com.amazonaws.youruserpools.TransferActivity
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:34:9-81
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:38:13-69
-activity#com.amazonaws.youruserpools.MFAActivity
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:41:9-44:59
-	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:43:13-55
-	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:44:13-56
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:34:19-78
+activity#com.amazonaws.youruserpools.LandDetails
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:35:9-76
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:42:13-67
-activity#com.amazonaws.youruserpools.ForgotPasswordActivity
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:35:19-73
+activity#com.amazonaws.youruserpools.MainActivity
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:36:9-44:20
+	android:theme
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:38:13-56
+	android:name
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:37:13-68
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:39:13-43:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:40:17-69
+	android:name
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:40:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:42:17-77
+	android:name
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:42:27-74
+activity#com.amazonaws.youruserpools.UserActivity
 ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:45:9-48:59
 	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:47:13-67
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:47:13-56
 	android:theme
 		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:48:13-56
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:46:13-78
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:46:13-68
+activity#com.amazonaws.youruserpools.RegisterUser
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:49:9-51:59
+	android:theme
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:51:13-56
+	android:name
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:50:13-68
+activity#com.amazonaws.youruserpools.AboutApp
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:52:9-55:59
+	android:label
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:54:13-61
+	android:theme
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:55:13-56
+	android:name
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:53:13-64
+activity#com.amazonaws.youruserpools.SignUpConfirm
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:56:9-59:59
+	android:label
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:58:13-67
+	android:theme
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:59:13-56
+	android:name
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:57:13-69
+activity#com.amazonaws.youruserpools.MFAActivity
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:60:9-63:59
+	android:label
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:62:13-55
+	android:theme
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:63:13-56
+	android:name
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:61:13-67
+activity#com.amazonaws.youruserpools.ForgotPasswordActivity
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:64:9-67:59
+	android:label
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:66:13-67
+	android:theme
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:67:13-56
+	android:name
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:65:13-78
 activity#com.amazonaws.youruserpools.SettingsActivity
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:49:9-52:59
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:68:9-71:59
 	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:51:13-60
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:70:13-60
 	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:52:13-56
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:71:13-56
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:50:13-72
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:69:13-72
 activity#com.amazonaws.youruserpools.ChangePasswordActivity
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:53:9-56:59
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:72:9-75:59
 	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:55:13-67
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:74:13-67
 	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:56:13-56
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:75:13-56
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:54:13-78
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:73:13-78
 activity#com.amazonaws.youruserpools.VerifyActivity
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:57:9-60:59
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:76:9-79:59
 	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:59:13-58
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:78:13-58
 	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:60:13-56
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:79:13-56
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:58:13-70
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:77:13-70
 activity#com.amazonaws.youruserpools.AddAttributeActivity
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:61:9-64:59
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:80:9-83:59
 	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:63:13-65
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:82:13-65
 	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:64:13-56
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:83:13-56
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:62:13-76
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:81:13-76
 activity#com.amazonaws.youruserpools.DeviceSettings
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:65:9-68:59
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:84:9-87:59
 	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:67:13-67
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:86:13-67
 	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:68:13-56
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:87:13-56
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:66:13-70
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:85:13-70
 activity#com.amazonaws.youruserpools.NewPassword
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:69:9-72:59
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:88:9-91:59
 	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:71:13-64
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:90:13-64
 	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:72:13-56
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:91:13-56
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:70:13-67
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:89:13-67
 activity#com.amazonaws.youruserpools.ChooseMFA
-ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:73:9-76:59
+ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:92:9-95:59
 	android:label
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:75:13-62
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:94:13-62
 	android:theme
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:76:13-56
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:95:13-56
 	android:name
-		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:74:13-65
+		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml:93:13-65
 uses-sdk
 INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml
@@ -207,12 +251,32 @@ MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Shashi\.gradle
 MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-23.4.0.aar\e6eebdfdad161c4dde459791a3e23463\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\295007bd7e5186139b9d9dd13a8f47d7\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\295007bd7e5186139b9d9dd13a8f47d7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\fa6903a85d03314decee741a8c01a536\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\fa6903a85d03314decee741a8c01a536\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\38bf2f64b1ef0fd16775719840e81229\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\38bf2f64b1ef0fd16775719840e81229\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\bedfcd34df93cc77a64082a3371f13b4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\bedfcd34df93cc77a64082a3371f13b4\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.2.1.aar\d30242a8d06e22d8641df3b0d9b60d8f\AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-23.2.1.aar\d30242a8d06e22d8641df3b0d9b60d8f\AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.2.1.aar\86a076cddae77fde92b3a588ac0d7516\AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-vector-drawable:23.2.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-23.2.1.aar\86a076cddae77fde92b3a588ac0d7516\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\b68ef7538309cfb31401f17af79a404c\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-23.4.0.aar\b68ef7538309cfb31401f17af79a404c\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e3684e80281c1338cbb90edabb80f34c\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e3684e80281c1338cbb90edabb80f34c\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\df44084e852fe92e6d411a32078a548d\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\df44084e852fe92e6d411a32078a548d\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\49992e22a786558240023f39b3324726\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\49992e22a786558240023f39b3324726\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\d1996fe2668c83e9b01f6ee406ea5f57\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\d1996fe2668c83e9b01f6ee406ea5f57\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\fc009d08cd2ad3c95a25aa5439da6150\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\fc009d08cd2ad3c95a25aa5439da6150\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\8689176712c4690224c7e33d8dfcceba\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\8689176712c4690224c7e33d8dfcceba\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f6b0b6bdf8d4789d75cc03c67415c8dc\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f6b0b6bdf8d4789d75cc03c67415c8dc\AndroidManifest.xml:20:5-22:41
 INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
@@ -225,3 +289,51 @@ INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDe
 		INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Shashi\AndroidStudioProjects\AmazonCognitoYourUserPoolsDemo\app\src\main\AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.1.0.aar\2427962db2ea654bc5b0d9ecdbf043a9\AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\fa6903a85d03314decee741a8c01a536\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\fa6903a85d03314decee741a8c01a536\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\fa6903a85d03314decee741a8c01a536\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\fa6903a85d03314decee741a8c01a536\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\bedfcd34df93cc77a64082a3371f13b4\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\bedfcd34df93cc77a64082a3371f13b4\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\bedfcd34df93cc77a64082a3371f13b4\AndroidManifest.xml:24:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e3684e80281c1338cbb90edabb80f34c\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\df44084e852fe92e6d411a32078a548d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\df44084e852fe92e6d411a32078a548d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\49992e22a786558240023f39b3324726\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\49992e22a786558240023f39b3324726\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\d1996fe2668c83e9b01f6ee406ea5f57\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\d1996fe2668c83e9b01f6ee406ea5f57\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\fc009d08cd2ad3c95a25aa5439da6150\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\fc009d08cd2ad3c95a25aa5439da6150\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\8689176712c4690224c7e33d8dfcceba\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\8689176712c4690224c7e33d8dfcceba\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e3684e80281c1338cbb90edabb80f34c\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\e3684e80281c1338cbb90edabb80f34c\AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f6b0b6bdf8d4789d75cc03c67415c8dc\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f6b0b6bdf8d4789d75cc03c67415c8dc\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Shashi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\f6b0b6bdf8d4789d75cc03c67415c8dc\AndroidManifest.xml:26:13-58

@@ -7,7 +7,9 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.amazonaws.youruserpools.CognitoYourUserPoolsDemo.R;
 
@@ -16,13 +18,20 @@ public class TransferActivity extends AppCompatActivity {
     private EditText AssetID;
     private EditText Recipientname;
     private EditText RecipientID;
+    private TextView resultTextView;
 
     private Button Transfer;
+    private String assetIDString,RecipientIDString,RecipientNameString;
+    private int statusCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transfer);
+
+        resultTextView=(TextView)findViewById(R.id.resultTextView);
+        resultTextView.setVisibility(View.VISIBLE);
+        resultTextView.setText("");
 
         AssetID=(EditText)findViewById(R.id.editTextLandId);
         AssetID.addTextChangedListener(new TextWatcher() {
@@ -37,8 +46,7 @@ public class TransferActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                TextView label = (TextView) findViewById(R.id.textViewRegUserIdMessage);
-                label.setText("");
+
             }
 
             @Override
@@ -50,7 +58,8 @@ public class TransferActivity extends AppCompatActivity {
             }
         });
 
-        Recipientname=(EditText)findViewById(R.id.editTextLandId);
+
+        Recipientname=(EditText)findViewById(R.id.editTextRegUserPassword);
         Recipientname.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -63,8 +72,7 @@ public class TransferActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                TextView label = (TextView) findViewById(R.id.textViewUserRegPasswordMessage);
-                label.setText("");
+
 
             }
 
@@ -90,8 +98,7 @@ public class TransferActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                TextView label = (TextView) findViewById(R.id.textViewRegGivenNameMessage);
-                label.setText("");
+
             }
 
             @Override
@@ -107,15 +114,23 @@ public class TransferActivity extends AppCompatActivity {
         Transfer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                assetIDString=AssetID.getText().toString();
+                RecipientIDString=RecipientID.getText().toString();
+                RecipientNameString=Recipientname.getText().toString();
+                resultTextView.setText("Land with Id "+AssetID.getText()+" successfully transfered to "+Recipientname.getText()+" having ID:"+RecipientID.getText());
 
+
+                statusCode=HttpUtils.TransferOwnership(assetIDString,RecipientIDString,RecipientNameString);
+                if(statusCode!=200) {
+                    resultTextView.setText("fail");
+
+                } else {
+
+                    resultTextView.setText("Land with Id "+AssetID.getText()+" successfully transfered to "+Recipientname.getText()+" having ID:"+RecipientID.getText());
+
+                }
             }
         });
-
-
-
-
-
-
 
 
     }
