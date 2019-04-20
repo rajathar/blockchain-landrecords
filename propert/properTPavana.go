@@ -47,10 +47,10 @@ const (
 
 type Asset struct {
 	AssetId                 string     `json:"assetId"`
-	AssetEastCoordinatesId  int `json:"assetEastCoordinatesId"`
-	AssetWestCoordinatesId  int `json:"assetWestCoordinatesId"`
-	AssetNorthCoordinatesId int `json:"assetNorthCoordinatesId"`
-	AssetSouthCoordinatesId int `json:"assetSouthCoordinatesId"`
+	Latitude  int `json:"latitude"`
+	Longitude  int `json:"longitude"`
+	Length int `json:"lengthId"`
+	Breadth int `json:"breadthId"`
 	Address                 string  `json:"address"`
 	OwnerId					string   `json:"ownerId"`
 	ownerName				string `json:"ownerName"`
@@ -95,10 +95,10 @@ func (s *SmartContract) Init(APIstub shim.ChaincodeStubInterface) sc.Response {
 	}*/
 
 	assets := []Asset{
-		Asset{AssetId: "1", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-		AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 403", OwnerId: "234-762", OwnerName:"Srinivas"},
-		Asset{AssetId: "2", AssetEastCoordinatesId: 10, AssetWestCoordinatesId: 20, AssetNorthCoordinatesId: 29,
-		AssetSouthCoordinatesId: 10, Address: "Fortune Samrat 402", OwnerId:"347-983", OwnerName:"Fathima"},
+		Asset{AssetId: "1", Latitude: 10, Longitude: 20, Length: 29,
+		Breadth: 10, Address: "Fortune Samrat 403", OwnerId: "234-762", OwnerName:"Srinivas"},
+		Asset{AssetId: "2", Latitude: 10, Longitude: 20, Length: 29,
+		Breadth: 10, Address: "Fortune Samrat 402", OwnerId:"347-983", OwnerName:"Fathima"},
 	}
 
 	i := 0
@@ -169,7 +169,7 @@ func (s *SmartContract) transferAsset(APIstub shim.ChaincodeStubInterface, args 
 	}
 
 
-	LR := Asset{AssetId: lr.AssetId, AssetEastCoordinatesId: lr.AssetEastCoordinatesId, AssetWestCoordinatesId:lr.AssetWestCoordinatesId, AssetNorthCoordinatesId: lr.AssetNorthCoordinatesId, AssetSouthCoordinatesId:lr.AssetSouthCoordinatesId, Address: lr.Address, OwnerId:personId,ownerName:personName}
+	LR := Asset{AssetId: lr.AssetId, Latitude: lr.Latitude, Longitude:lr.Longitude, Length: lr.Length, Breadth:lr.Breadth, Address: lr.Address, OwnerId:personId,ownerName:personName}
 	LRBytes, err := json.Marshal(LR)
 
 	if err != nil {

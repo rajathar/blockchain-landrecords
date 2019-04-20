@@ -175,19 +175,19 @@
                     "type": "string",
                     "description": "Asset ID"
                 },
-                "assetEastCoordinatesId": {
+                "latitude": {
                     "type": "string",
                     "description": "Asset East Coordinates ID"
                 },
-                "assetWestCoordinatesId": {
+                "longitude": {
                     "type": "string",
                     "description": "Asset West Coordinates ID"
                 },
-                "assetNorthCoordinatesId": {
+                "lengthId": {
                     "type": "string",
                     "description": "Asset North Coordinates ID"
                 },
-                "assetSouthCoordinatesId": {
+                "breadthId": {
                     "type": "string",
                     "description": "Asset South Coordinates ID"
                 },
