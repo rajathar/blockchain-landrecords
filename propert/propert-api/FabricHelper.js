@@ -148,26 +148,29 @@ function getMyLandRecords(req, res){
 	
 		// send the query proposal to the peer
 		return channel.queryByChaincode(request);
-	}).then((query_responses) => {
-		console.log("Query has completed, checking results");
-		// query_responses could have more than one  results if there multiple peers were used as targets
-		if (query_responses && query_responses.length == 1) {
-			if (query_responses[0] instanceof Error) {
-				console.error("error from query = ", query_responses[0]);
-				res.send({code:"500", data: "Issue with getting LC details"});
-			} else {
-			        console.log(query_response)	
-				console.log("Response is ", query_responses[0]);
-				res.send({code:"200", data: JSON.parse(query_responses[0].toString())});
-			}
-		} else {
-			console.log("No payloads were returned from query");
-			res.send({code:"500", data: "No LC found"});
-		}
-	}).catch((err) => {
-		console.error('Failed to query successfully :: ' + err);
-		res.send({code:"500", data: "Issue with getting LC details"});
-	});
+        }).then((query_responses) => {
+                console.log("Query has completed, checking results");
+                console.log(query_responses[0].toString())
+                // query_responses could have more than one  results if there multiple peers were used as targets
+                if (query_responses && query_responses.length == 1) {
+                        console.log("Ïm here too")
+                        if (query_responses[0] instanceof Error) {
+                                console.error("error from query = ", query_responses[0]);
+                                res.send({code:"500", message: "Issue with getting LC details"});
+                        } else {
+                                console.log("I am here")
+                                console.log("Response is ", query_responses[0].toString());
+                                res.send({code:"200", data: JSON.parse(query_responses[0].toString())});
+                        }
+                } else {
+                        console.log("No payloads were returned from query");
+                        res.send({code:"500", message: "No LC found"});
+                }
+        }).catch((err) => {
+                console.error('Failed to query successfully :: ' + err);
+                res.send({code:"500", message: "Issue with getting LC details"});
+        });
+
 	
 }
 
@@ -221,13 +224,15 @@ function getAssetHistory(req, res){
 		return channel.queryByChaincode(request);
 	}).then((query_responses) => {
 		console.log("Query has completed, checking results");
+		console.log(query_responses[0].toString())
 		// query_responses could have more than one  results if there multiple peers were used as targets
 		if (query_responses && query_responses.length == 1) {
+			concole.log("Ïm here too")
 			if (query_responses[0] instanceof Error) {
 				console.error("error from query = ", query_responses[0]);
 				res.send({code:"500", message: "Issue with getting LC details"});
 			} else {
-				
+			 	console.log("I am here")	
 				console.log("Response is ", query_responses[0].toString());
 				res.send({code:"200", data: JSON.parse(query_responses[0].toString())});
 			}
