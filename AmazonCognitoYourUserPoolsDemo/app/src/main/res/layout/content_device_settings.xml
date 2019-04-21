@@ -23,7 +23,7 @@
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:layout_marginRight="@dimen/activity_horizontal_margin"
     android:layout_marginTop="@dimen/activity_vertical_margin"
-    tools:context="com.amazonaws.youruserpools.DeviceSettings"
+    tools:context="com.amazonaws.youruserpoolspropert.DeviceSettings"
     tools:showIn="@layout/activity_device_settings">
 
     <include layout="@layout/current_device_state"

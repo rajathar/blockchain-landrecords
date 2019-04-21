@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\rajat\\AndroidStudioProjects\\AmazonCognitoYourUserPoolsDemo\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\rajat\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.2.1.aar\\23ef650a4cef57492aeb146a5b573b77\\res\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "63",
+                        "endOffsets": "114"
+                    }
+                }
+            ]
+        }
+    ]
+}

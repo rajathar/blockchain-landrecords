@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.amazonaws.youruserpools.CognitoYourUserPoolsDemo"
+    package="com.amazonaws.youruserpoolspropert"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -27,7 +27,6 @@
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
 
         <!--
@@ -43,7 +42,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="com.amazonaws.youruserpools.MapsActivity"
+            android:name="com.amazonaws.youruserpoolspropert.MapsActivity"
             android:label="@string/title_activity_maps" >
         </activity>
         <!--
@@ -54,11 +53,11 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-        <activity android:name="com.amazonaws.youruserpools.LandRecordsActivity" />
-        <activity android:name="com.amazonaws.youruserpools.TransferActivity" />
-        <activity android:name="com.amazonaws.youruserpools.LandDetails" />
+        <activity android:name="com.amazonaws.youruserpoolspropert.LandRecordsActivity" />
+        <activity android:name="com.amazonaws.youruserpoolspropert.TransferActivity" />
+        <activity android:name="com.amazonaws.youruserpoolspropert.LandDetails" />
         <activity
-            android:name="com.amazonaws.youruserpools.MainActivity"
+            android:name="com.amazonaws.youruserpoolspropert.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,54 +66,54 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.amazonaws.youruserpools.UserActivity"
+            android:name="com.amazonaws.youruserpoolspropert.UserActivity"
             android:label="@string/title_activity_user"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.amazonaws.youruserpools.RegisterUser"
+            android:name="com.amazonaws.youruserpoolspropert.RegisterUser"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.amazonaws.youruserpools.AboutApp"
+            android:name="com.amazonaws.youruserpoolspropert.AboutApp"
             android:label="@string/title_activity_about_app"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.amazonaws.youruserpools.SignUpConfirm"
+            android:name="com.amazonaws.youruserpoolspropert.SignUpConfirm"
             android:label="@string/title_activity_sign_up_confirm"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.amazonaws.youruserpools.MFAActivity"
+            android:name="com.amazonaws.youruserpoolspropert.MFAActivity"
             android:label="@string/title_activity_mfa"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.amazonaws.youruserpools.ForgotPasswordActivity"
+            android:name="com.amazonaws.youruserpoolspropert.ForgotPasswordActivity"
             android:label="@string/title_activity_forgot_password"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.amazonaws.youruserpools.SettingsActivity"
+            android:name="com.amazonaws.youruserpoolspropert.SettingsActivity"
             android:label="@string/title_activity_settings"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.amazonaws.youruserpools.ChangePasswordActivity"
+            android:name="com.amazonaws.youruserpoolspropert.ChangePasswordActivity"
             android:label="@string/title_activity_change_password"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.amazonaws.youruserpools.VerifyActivity"
+            android:name="com.amazonaws.youruserpoolspropert.VerifyActivity"
             android:label="@string/title_activity_verify"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.amazonaws.youruserpools.AddAttributeActivity"
+            android:name="com.amazonaws.youruserpoolspropert.AddAttributeActivity"
             android:label="@string/title_activity_add_attribute"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.amazonaws.youruserpools.DeviceSettings"
+            android:name="com.amazonaws.youruserpoolspropert.DeviceSettings"
             android:label="@string/title_activity_device_settings"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.amazonaws.youruserpools.NewPassword"
+            android:name="com.amazonaws.youruserpoolspropert.NewPassword"
             android:label="@string/title_activity_new_password"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.amazonaws.youruserpools.ChooseMFA"
+            android:name="com.amazonaws.youruserpoolspropert.ChooseMFA"
             android:label="@string/title_activity_choose_mfa"
             android:theme="@style/AppTheme.NoActionBar" />
         <!-- Needs to be explicitly declared on P+ -->

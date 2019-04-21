@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\rajat\\AndroidStudioProjects\\AmazonCognitoYourUserPoolsDemo\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-land\\values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\rajat\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.2.1.aar\\23ef650a4cef57492aeb146a5b573b77\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,117,189,259,323,394",
+                        "endColumns": "61,71,69,63,70,67",
+                        "endOffsets": "112,184,254,318,389,457"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\rajat\\.gradle\\caches\\transforms-1\\files-1.1\\design-23.1.1.aar\\53a86e5e2692212a0bce51de0a3904d1\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "224",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "401"
+                    },
+                    "to": {
+                        "startLines": "8",
+                        "startColumns": "4",
+                        "startOffsets": "462",
+                        "endLines": "11",
+                        "endColumns": "12",
+                        "endOffsets": "639"
+                    }
+                }
+            ]
+        }
+    ]
+}
